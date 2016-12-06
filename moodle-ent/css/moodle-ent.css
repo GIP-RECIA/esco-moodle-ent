@@ -1,0 +1,352 @@
+/* General configuration */
+div.moodle-courses {
+    font-size: 1em;
+}
+
+/* List item representing a moodle course */
+dt.course {
+    background: url('../img/moodle-24.png') no-repeat top left;
+/*    height: 8px;*/
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+/* List item representing detais on a course */
+dd.course {
+    margin-left: 4em;
+}
+
+/* Center the loader */
+#loading {
+    position: relative;
+    left: 50%;
+}
+
+/* Hide the tabs at the beginning */
+#tabs {
+    display: none;
+	border: none;
+	overflow-x: hidden;
+	min-height: 160px;
+}
+
+/*
+#tabs ul {
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+    padding-bottom: 5px;
+}
+*/
+
+#hamburger {
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    padding: 3px 4px 3px;
+    position: relative;
+    width: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    float: right;
+    z-index: 999;
+}
+
+#hamburger div {
+	color : #000000;
+    height: 18px;
+    margin-top: -10px;
+    width: 90%;
+    font-weight: 900;
+}
+
+#tab-container {
+	display: none;
+	opacity: 0.0;
+	float: left;
+	width: 300px;
+	background: none;
+	border: none;
+	background-color: transparent;
+	z-index:900;
+	margin-top: 40px;
+}
+
+.moodle-courses .portlet-section-body{
+	background-color: transparent;
+}
+
+#tab-container li,
+#tab-container a {
+	width: 100%;
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: none;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#tab-container span a {
+	font-size: 90%;
+}
+
+
+#tab-container li.ui-state-active a {
+	font-weight: bold;
+}
+
+.moodle-courses .menuCoursMoodle{
+	max-width: 300px;
+	float: left;
+	margin-top: 20px;
+}
+
+.moodle-courses .menuCoursMoodle >p {
+        width: 230px;
+        padding: 8px 0 0 5px;
+	margin-bottom: 0px;
+        font-size: 14px;
+	color: #808080
+}
+
+.moodle-courses .menuCoursMoodle >p a {
+	color: #808080
+}
+
+.moodle-courses .menuCoursMoodle .activeWPP {
+	color: #303030;
+	background-color: #D0D0D0;
+}
+
+.moodle-courses .menuCoursMoodle .activeWPP a {
+	color: #303030;
+}
+
+.menuCoursMoodle, .course_list_esco .course_title >div >span{
+	cursor:pointer;
+}
+
+.moodle-courses .ui-widget-content{
+	background: none !important;
+}
+
+/* CSS DROP JQUERY */
+
+/* Dropdown Button */
+.moodle-courses .dropbtnCours {
+    background-color: #ffffff;
+    color: #303030;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+
+    width: 100%;
+    outline: none;
+    margin-top: -12px;
+}
+/* Dropdown button on hover & focus */
+.moodle-courses .dropbtnCours:hover, .dropbtnCours:focus {
+    background-color: #f3f3f3;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.moodle-courses .moodledropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.moodle-courses .moodledropdown .dropbtnCours .caret {
+	float:right;
+	margin-top:10px;
+}
+
+.moodle-courses .moodledropdown .dropbtnCours .material-icons {
+	font-size: 16px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.moodle-courses .dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+/* Links inside the dropdown */
+.moodle-courses .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.moodle-courses .dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.moodle-courses .show {display:block;}
+
+
+/****************************************************************************************************************/
+/*												Mes cours Moodle												*/
+/****************************************************************************************************************/
+
+#tabs-1 {
+	font-family: "open sans",sans-serif;
+	font-size: 14px;
+}
+
+#tabs-1 .no_course {
+	margin-top: 25px;
+}
+
+#tabs-1 .header {
+	display: none;
+}
+
+#tabs-1 h4 {
+	font-weight: normal;
+    font-size: 20px;
+    font-family: inherit;
+    margin: 10px 0 10px 0;
+}
+
+/*
+#tabs-1 a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #4070a1;
+}
+
+#tabs-1 a:hover {
+    color: #25b2f3;
+}
+*/
+
+#tabs-1 .coursebox {
+    width: auto;
+    background-color: #fff;
+    /* border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05); */
+    padding: 5px;
+}
+
+#tabs-1 .summary_reply.fold_reply,
+#tabs-1 .teachers_reply.fold_reply {
+    display: block;
+    padding: 3px 15px;
+    color: #808080;
+}
+
+#tabs-1 .summary {
+    margin: 10px;
+}
+
+#tabs-1 .block-hider-show {
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    padding-left: 21px;
+}
+
+#tabs-1 .block-hider-hide {
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    padding-left: 21px;
+    display: none;
+}
+
+#tabs-1 .teachers.folded {
+    display: none;
+}
+
+#tabs-1 li {
+	list-style-type: none;
+}
+
+#tabs-1 .categorypath {
+    color: #999;
+    text-align: right;
+}
+
+#tabs-1 .activity_info {
+	margin: 10px;
+}
+
+#tabs-1 .collapsibleregioninner {
+	display: none;
+}
+#tab-container li a{
+	border: none !important;
+	outline: none;
+}
+#main-container {
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+    padding-bottom: 5px;
+    background-color: #ffffff;
+}
+#main-container a {
+    font-weight: normal;
+}
+
+
+#main-container select {
+    opacity: 1;
+    width: auto;
+}
+/*select[name=rolesFilter] {    
+float: right;
+}*/
+
+// SPECIAL SELECT MENU
+@media screen {
+	@media (max-width: 700px) {
+		.moodle-courses #main-container select {
+    			opacity: 1;
+    			width: 100%;
+		}
+	}
+}
+
+
+.moodle-courses h2.main-container-title {
+    font-weight: normal;
+    font-size: 16px;
+    color: #000000 !important;
+    margin-top: 5px;
+    width: 100%;
+}
+#main-container #tabs-1, #main-container #tabs-2, #main-container #tabs-3, #main-container #tabs-4 {
+    padding-top: 0;
+}
+
+.moodle-courses .up .course_list_esco h1 {
+    color: transparent;
+}
+.moodle-courses .course_list_esco .course_title .courseimage > img {
+    max-width: 10em;
+}
+.moodle-courses .courseOverviewSortSelect {
+        width: auto;
+        margin-right: 25px;
+}
+.moodle-courses .courseOverviewSpan {
+        display: inline-block;
+}
+.moodle-courses .courseOverviewRoleSelect {
+        width: auto;
+	display: inline;
+}
+.moodle-courses .material-icons {
+	font-size: 14px;
+	padding-right: 5px;
+}
+
